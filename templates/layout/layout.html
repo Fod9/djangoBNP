@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banque Manager</title>
+    <link rel="stylesheet" href="{% static 'banquemanager/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'banquemanager/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'banquemanager/css/layout.css' %}">
+    <script src="{% static 'banquemanager/js/GetCookies.js' %}" defer></script>
+    {% block css %}
+
+    {% endblock %}
+</head>
+<body>
+    {% include 'layout/header.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include 'layout/footer.html' %}
+
+
+    {% block script %}
+
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+{% extends 'layout/layout.html' %}
+
+{% block content %}
+    <form method="post">
+        {% if error_message %}
+            <h2>{{ error_message }}</h2>
+        {% endif %}
+        {% csrf_token %}
+        <label>
+            Nom d'utilisateur
+            <input name="username" type="text">
+        </label>
+        <label>
+            Email
+            <input type="email" name="email">
+        </label>
+        <label>
+            Mot de passe
+            <input name="password" type="password">
+        </label>
+        <button type="submit">Se connecter</button>
+    </form>
+{% endblock %}
