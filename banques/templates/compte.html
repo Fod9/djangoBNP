@@ -50,6 +50,7 @@
                 <tr class="
                         {% if transaction.type == 'DEPOT' %}vert{% endif %}
                         {% if transaction.type == 'RETRAIT' %}rouge{% endif %}
+                        {% if transaction.type == 'INTERET' %}vert{% endif %}
                         {% if transaction.type == 'VIREMENT' %}
                         {% if transaction.compte_cible == compte %}
                             vert

@@ -5,7 +5,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.interval import IntervalTrigger
 from django.core.management import BaseCommand
 
-from banques.models import CompteEnBanque
+from banques.models import CompteEnBanque, Transaction, Depot, Interet
 
 logger = logging.getLogger(__name__)
 
@@ -31,8 +31,13 @@ def scheduled_task():
         comptes = CompteEnBanque.objects.all()
 
         for compte in comptes:
-            compte.solde+= compte.solde * compte.taux_interet / 100
+            interet = round(compte.solde * compte.taux_interet / 100,2)
+            compte.solde+= interet
             compte.save()
+            Interet.objects.create(
+                montant=interet,
+                compte_source=compte,
+            ).save()
 
         logger.info(f"Comptes mis à jour avec leurs taux d'interet")
 

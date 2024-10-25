@@ -93,6 +93,7 @@ class Transaction(models.Model):
         DEPOT = "DEPOT", "Dépot"
         RETRAIT = "RETRAIT", "Retrait"
         VIREMENT = "VIREMENT", "Virement"
+        INTERET = "INTERET", "Intérêt"
 
 
     objects = TransactionManager()
@@ -104,12 +105,27 @@ class Transaction(models.Model):
         "Type", max_length=50, choices=Types.choices, default=type_par_defaut
     )
 
+    def save(self, *args, **kwargs):
+        if not self.pk:
+            self.type = self.type_par_defaut
+        super().save(*args, **kwargs)
+
+
     def __str__(self):
         return f"{self.date}: {self.compte_source} - {self.montant}"
 
 class DepotManager(Manager):
     def get_queryset(self, *args, **kwargs):
         return super().get_queryset(*args, **kwargs).filter(type=Transaction.Types.DEPOT)
+
+class InteretManager(Manager):
+    def get_queryset(self, *args, **kwargs):
+        return super().get_queryset(*args, **kwargs).filter(type=Transaction.Types.INTERET)
+
+class Interet(Transaction):
+    objects = InteretManager()
+
+    type_par_defaut = Transaction.Types.INTERET
 
 class Depot(Transaction):
     objects = DepotManager()

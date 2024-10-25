@@ -608,3 +608,236 @@ Next wakeup is due at 2024-10-25 13:35:18.676888+00:00 (in 19.999490 seconds)
 "GET /banque/comptes/16 HTTP/1.1" 302 0
 "GET /banque/enter_pin/16?next=%2Fbanque%2Fcomptes%2F16 HTTP/1.1" 200 1481
 "POST /banque/comptes/16 HTTP/1.1" 200 2544
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:35:47.299532+00:00 (in 19.999521 seconds)
+"POST /banque/comptes/16 HTTP/1.1" 200 2544
+"POST /banque/comptes/16 HTTP/1.1" 200 2544
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:36:07 UTC)" (scheduled at 2024-10-25 13:35:47.299532+00:00)
+Next wakeup is due at 2024-10-25 13:36:07.299532+00:00 (in 19.996047 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:36:07 UTC)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:36:27.299532+00:00 (in 19.997404 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:36:27 UTC)" (scheduled at 2024-10-25 13:36:07.299532+00:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:36:27 UTC)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:36:47.299532+00:00 (in 19.994215 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:36:47 UTC)" (scheduled at 2024-10-25 13:36:27.299532+00:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:36:47 UTC)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:37:07.299532+00:00 (in 19.995224 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:37:07 UTC)" (scheduled at 2024-10-25 13:36:47.299532+00:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:37:07 UTC)" executed successfully
+/Users/tom/Documents/PythonBanque/banquemanager/banquemanager/management/commands/start_scheduler.py changed, reloading.
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:37:13.118826+00:00 (in 19.999478 seconds)
+/Users/tom/Documents/PythonBanque/banquemanager/banquemanager/management/commands/start_scheduler.py changed, reloading.
+Watching for file changes with StatReloader
+/Users/tom/Documents/PythonBanque/banquemanager/banquemanager/management/commands/start_scheduler.py changed, reloading.
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:38:42.939671+00:00 (in 19.999299 seconds)
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:39:07.691790+00:00 (in 19.999501 seconds)
+"POST /banque/comptes/16 HTTP/1.1" 200 2544
+"POST /banque/comptes/16 HTTP/1.1" 200 2544
+"POST /banque/comptes/16 HTTP/1.1" 200 2544
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:39:27 UTC)" (scheduled at 2024-10-25 13:39:07.691790+00:00)
+Next wakeup is due at 2024-10-25 13:39:27.691790+00:00 (in 19.996032 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:39:27 UTC)" executed successfully
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:39:46.949625+00:00 (in 19.999549 seconds)
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:40:02.783574+00:00 (in 19.999464 seconds)
+"GET / HTTP/1.1" 302 0
+"GET /banque/ HTTP/1.1" 200 1337
+"GET /banque/comptes/16 HTTP/1.1" 302 0
+"GET /banque/enter_pin/16?next=%2Fbanque%2Fcomptes%2F16 HTTP/1.1" 200 1481
+"POST /banque/comptes/16 HTTP/1.1" 200 2969
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:40:22 UTC)" (scheduled at 2024-10-25 13:40:02.783574+00:00)
+Next wakeup is due at 2024-10-25 13:40:22.783574+00:00 (in 19.995420 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:40:22 UTC)" executed successfully
+/Users/tom/Documents/PythonBanque/banquemanager/banquemanager/management/commands/start_scheduler.py changed, reloading.
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:40:32.605419+00:00 (in 19.999166 seconds)
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:40:32 UTC)" (scheduled at 2024-10-25 13:40:32.605419+00:00)
+Next wakeup is due at 2024-10-25 13:40:52.605419+00:00 (in 19.994605 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:40:52 UTC)" executed successfully
+/Users/tom/Documents/PythonBanque/banquemanager/banques/models.py changed, reloading.
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:41:04.288535+00:00 (in 19.999120 seconds)
+/Users/tom/Documents/PythonBanque/banquemanager/banques/models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:41:56.876503+00:00 (in 19.999309 seconds)
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:42:15.797953+00:00 (in 19.998109 seconds)
+"GET / HTTP/1.1" 302 0
+"GET /banque/ HTTP/1.1" 200 1337
+"GET /banque/comptes/16 HTTP/1.1" 302 0
+"GET /banque/enter_pin/16?next=%2Fbanque%2Fcomptes%2F16 HTTP/1.1" 200 1481
+"GET /banque/ HTTP/1.1" 200 1337
+"GET /banque/comptes/creer HTTP/1.1" 200 1846
+"POST /banque/comptes/creer HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /banque/ HTTP/1.1" 200 1478
+"GET /banque/comptes/17 HTTP/1.1" 302 0
+"GET /banque/enter_pin/17?next=%2Fbanque%2Fcomptes%2F17 HTTP/1.1" 200 1481
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:42:35 UTC)" (scheduled at 2024-10-25 13:42:15.797953+00:00)
+Next wakeup is due at 2024-10-25 13:42:35.797953+00:00 (in 19.995919 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:42:35 UTC)" executed successfully
+"POST /banque/comptes/17 HTTP/1.1" 200 2689
+/Users/tom/Documents/PythonBanque/banquemanager/banquemanager/management/commands/start_scheduler.py changed, reloading.
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:42:51.907225+00:00 (in 19.999106 seconds)
+"POST /banque/depot/17 HTTP/1.1" 200 31
+"POST /banque/comptes/17 HTTP/1.1" 200 3003
+"POST /banque/comptes/17 HTTP/1.1" 200 3003
+"POST /banque/comptes/17 HTTP/1.1" 200 3003
+"POST /banque/comptes/17 HTTP/1.1" 200 3003
+"POST /banque/comptes/17 HTTP/1.1" 200 3003
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:42:51 UTC)" (scheduled at 2024-10-25 13:42:51.907225+00:00)
+test
+Next wakeup is due at 2024-10-25 13:43:11.907225+00:00 (in 19.991207 seconds)
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:43:11 UTC)" executed successfully
+"POST /banque/comptes/17 HTTP/1.1" 200 3438
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:43:31.907225+00:00 (in 19.996118 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:43:31 UTC)" (scheduled at 2024-10-25 13:43:11.907225+00:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:43:31 UTC)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:43:51.907225+00:00 (in 19.994322 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:43:51 UTC)" (scheduled at 2024-10-25 13:43:31.907225+00:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:43:51 UTC)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:44:11.907225+00:00 (in 19.994051 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:44:11 UTC)" (scheduled at 2024-10-25 13:43:51.907225+00:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:44:11 UTC)" executed successfully
+/Users/tom/Documents/PythonBanque/banquemanager/banques/models.py changed, reloading.
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:44:23.650575+00:00 (in 19.999263 seconds)
+"POST /banque/comptes/17 HTTP/1.1" 200 4747
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:44:33.468236+00:00 (in 19.999181 seconds)
+"POST /banque/comptes/17 HTTP/1.1" 200 4747
+"POST /banque/comptes/17 HTTP/1.1" 200 4747
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:48:13.717682+00:00 (in 19.999474 seconds)
+"POST /banque/comptes/17 HTTP/1.1" 200 4747
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:48:13 UTC)" (scheduled at 2024-10-25 13:48:13.717682+00:00)
+Next wakeup is due at 2024-10-25 13:48:33.717682+00:00 (in 19.996392 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:48:33 UTC)" executed successfully
+/Users/tom/Documents/PythonBanque/banquemanager/banquemanager/management/commands/start_scheduler.py changed, reloading.
+Watching for file changes with StatReloader
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:48:37.498315+00:00 (in 19.999530 seconds)
+"POST /banque/comptes/17 HTTP/1.1" 200 5076
+"POST /banque/comptes/17 HTTP/1.1" 200 5076
+"POST /banque/comptes/17 HTTP/1.1" 200 5076
+"POST /banque/comptes/17 HTTP/1.1" 200 5076
+"POST /banque/comptes/17 HTTP/1.1" 200 5076
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:48:57 UTC)" (scheduled at 2024-10-25 13:48:37.498315+00:00)
+Next wakeup is due at 2024-10-25 13:48:57.498315+00:00 (in 19.995319 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:48:57 UTC)" executed successfully
+"POST /banque/comptes/17 HTTP/1.1" 200 5391
+"GET /banque/ HTTP/1.1" 200 1478
+"GET /users/logout/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /users/login/?next=/ HTTP/1.1" 200 1574
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 13:49:17.498315+00:00 (in 19.205497 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:49:17 UTC)" (scheduled at 2024-10-25 13:48:57.498315+00:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 13:49:17 UTC)" executed successfully
