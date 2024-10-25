@@ -1,7 +1,6 @@
 {% extends 'layout/layout.html' %}
 
 {% block content %}
-    <h1>Vous êtes dans la banque : {{ banque_nom }}</h1>
 
     <h2>Vos comptes </h2>
 
@@ -14,5 +13,7 @@
                 </li>
             {% endfor %}
         </ul>
+
+        <a href="/banque/comptes/creer">Créer un compte</a>
     </div>
 {% endblock %}

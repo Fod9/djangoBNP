@@ -1,23 +1,7 @@
-from django.db import models
 import uuid
-import random
 
+from django.db import models
 from django.db.models import Manager
-from django.utils.timezone import override
-
-
-
-class Banque(models.Model):
-    banque_id = models.AutoField(primary_key=True)
-    nom = models.CharField(max_length=255)
-    comptes_bancaires = models.ManyToManyField('CompteEnBanque', related_name='banques', blank=True)
-    utilisateurs = models.ManyToManyField('users.Utilisateur', related_name='banques', blank=True)
-
-
-    def creer_compte(self, nom: str, prenom: str, taux_interet: float = 0.01, montant_initial: float = 0.0):
-        compte = CompteEnBanque.objects.create(nom=nom, prenom=prenom, taux_interet=taux_interet, solde=montant_initial)
-        self.comptes_bancaires.add(compte)
-        return compte
 
 
 class CompteEnBanque(models.Model):
@@ -28,12 +12,7 @@ class CompteEnBanque(models.Model):
     pin = models.PositiveIntegerField(default=0)
     date_creation = models.DateTimeField(auto_now_add=True)
     utilisateur = models.ForeignKey('users.Utilisateur', related_name='comptes', on_delete=models.CASCADE, null=True)
-    banque = models.ForeignKey(Banque, on_delete=models.CASCADE, null=False)
     rib = models.UUIDField(default=uuid.uuid4, editable=False)
-
-    def generer_pin(self):
-        self.pin = random.randint(1000, 9999)
-        self.save()
 
     def consulter_solde(self):
         return self.solde

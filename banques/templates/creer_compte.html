@@ -1,0 +1,26 @@
+{% extends 'layout/layout.html' %}
+
+{% block content %}
+    <form action="{% url 'banques:creer_compte' %}" method="post">
+        {% csrf_token %}
+        <label for="nom">Nom compte
+            <input type="text" name="nom" id="nom" required>
+        </label>
+        <label for="taux_interet">
+            Taux d'intérêt
+            <select name="taux_interet" id="taux_interet">
+                <option value="0.05">5%</option>
+                <option value="0.1" selected>10%</option>
+                <option value="0.2">20%</option>
+            </select>
+        </label>
+
+        <label for="pin">
+            PIN
+            <input type="text" value="{{ pin }}" id="pin" disabled>
+            <input type="hidden" name="pin" value="{{ pin }}">
+        </label>
+
+        <input type="submit" value="Créer">
+    </form>
+{% endblock %}

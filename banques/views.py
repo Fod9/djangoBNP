@@ -1,43 +1,15 @@
-from functools import wraps
 from itertools import chain
-from urllib.parse import urlencode
 
 from django.contrib.auth.decorators import login_required
+from django.http import JsonResponse
 from django.shortcuts import render, redirect
+from django.views.decorators.http import require_http_methods
 from django.urls import reverse
 
-from banques.models import Banque, CompteEnBanque, Virement, Transaction
+from banques.models import CompteEnBanque, Transaction
 from users.models import Utilisateur
-from django.http import JsonResponse, HttpResponseRedirect
+from banques.utils import require_pin, generer_pin
 
-
-def require_pin():
-    def decorator(view_func):
-        @wraps(view_func)
-        def _wrapped_view(request, *args, **kwargs):
-            compte_id = kwargs.get('compte_id')
-            compte = CompteEnBanque.objects.get(pk=compte_id)
-
-            if request.method == 'POST':
-                pin = request.POST.get('pin')
-
-                if int(compte.pin) == int(pin):
-                    return view_func(request, *args, **kwargs)
-                else:
-                    next_url = request.get_full_path()
-                    return render(request, 'enter_pin.html', context={
-                        "next": next_url,
-                        "compte_id": compte_id,
-                        "error": "Le code pin est incorrect"
-                    })
-            else:
-                next_url = request.get_full_path()
-                url = reverse('banques:enter_pin', kwargs={'compte_id': compte_id})
-                redirect_url = f'{url}?{urlencode({"next": next_url})}'
-                return redirect(redirect_url)
-
-        return _wrapped_view
-    return decorator
 
 @login_required
 def enter_pin_view(request, compte_id,  error=None):
@@ -50,7 +22,7 @@ def enter_pin_view(request, compte_id,  error=None):
 
 @login_required
 def recuperer_comptes(request):
-    user = Utilisateur.objects.get(pk=request.user.utilisateur_id)
+    user = Utilisateur.objects.get(pk=request.user.pk)
     comptes = user.lister_comptes()
 
     comptes = [{"id": compte.compte_id, "solde": compte.solde, "nom": compte.nom} for compte in comptes]
@@ -58,24 +30,37 @@ def recuperer_comptes(request):
     return JsonResponse(data=comptes, safe=False)
 
 
+@require_http_methods(["GET", "POST"])
+@login_required
 def creer_compte(request):
-    pass
+    if request.method == 'GET':
+        return render(request, 'creer_compte.html', context={
+            "pin": generer_pin()
+        })
+
+    elif request.method == 'POST':
+        nom = request.POST.get('nom')
+        taux_interet = request.POST.get('taux_interet')
+        pin = request.POST.get('pin')
+
+        print(nom, taux_interet, pin)
+        compte = CompteEnBanque(
+            nom=nom,
+            taux_interet=float(taux_interet),
+            pin=float(pin),
+            utilisateur=request.user,
+        )
+        compte.save()
+
+        return redirect('/')
 
 @login_required
-def accueil_banque(request, banque_id):
-
-    banque = Banque.objects.get(pk=banque_id)
-
+def accueil_banque(request):
     user = request.user
 
-    user = Utilisateur.objects.get(pk=user.utilisateur_id)
-
-    comptes_dans_la_banque = banque.comptes_bancaires.all()
-
-    comptes_dans_la_banque = [compte for compte in comptes_dans_la_banque if compte.utilisateur == user]
+    comptes_dans_la_banque = CompteEnBanque.objects.filter(utilisateur=user)
 
     return render(request, 'home.html', context={
-        "banque_nom": banque.nom,
         "comptes" : comptes_dans_la_banque
     })
 
@@ -113,7 +98,7 @@ def transfert(request, compte_source):
 
         montant = request.POST.get('montant')
 
-        user = Utilisateur.objects.get(pk=request.user.utilisateur_id)
+        user = Utilisateur.objects.get(pk=request.user.pk)
 
         user.transferer_argent(compte_source, compte_dest, montant)
 
@@ -126,7 +111,7 @@ def transfert(request, compte_source):
 
 @login_required
 def depot(request, compte_id):
-    user = Utilisateur.objects.get(pk=request.user.utilisateur_id)
+    user = Utilisateur.objects.get(pk=request.user.pk)
 
     compte = CompteEnBanque.objects.get(pk=compte_id)
 
@@ -141,7 +126,7 @@ def depot(request, compte_id):
 
 @login_required
 def retrait(request, compte_id):
-    user = Utilisateur.objects.get(pk=request.user.utilisateur_id)
+    user = Utilisateur.objects.get(pk=request.user.pk)
 
     compte = CompteEnBanque.objects.get(pk=compte_id)
 
@@ -156,7 +141,7 @@ def retrait(request, compte_id):
 
 @login_required
 def virement(request, compte_source):
-    user = Utilisateur.objects.get(pk=request.user.utilisateur_id)
+    user = Utilisateur.objects.get(pk=request.user.pk)
 
     compte_source = CompteEnBanque.objects.get(pk=compte_source)
 
