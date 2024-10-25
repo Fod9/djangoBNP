@@ -18,6 +18,14 @@ def require_pin():
             if request.method == 'POST':
                 pin = request.POST.get('pin')
 
+                if not pin.isdigit():
+                    next_url = request.get_full_path()
+                    return render(request, 'enter_pin.html', context={
+                        "next": next_url,
+                        "compte_id": compte_id,
+                        "error": "Le code pin doit être un nombre"
+                    })
+
                 if int(compte.pin) == int(pin):
                     return view_func(request, *args, **kwargs)
                 else:
