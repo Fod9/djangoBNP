@@ -130,6 +130,15 @@ h1 {
     outline: none;
 }
 
+#popup input[type="text"], #popup input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
 
 
 #overlay {

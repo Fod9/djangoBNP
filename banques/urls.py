@@ -13,5 +13,6 @@ urlpatterns = [
     path('transfert/<int:compte_source>', views.transfert),
     path('virement/<int:compte_source>', views.virement),
     path('enter_pin/<int:compte_id>', views.enter_pin_view, name='enter_pin'),
+    path('pin/<int:compte_id>', views.modify_pin, name='pin'),
 
 ]

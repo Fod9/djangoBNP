@@ -63,6 +63,8 @@ function deployPopUpForm(action, compte, compte_dest = null) {
         destinataire = compte_dest
     }else if(action === "virement"){
         action_name = "virement"
+    }else if (action === "pin") {
+        action_name = "modifié"
     }
 
 
@@ -92,13 +94,22 @@ function deployPopUpForm(action, compte, compte_dest = null) {
         form.appendChild(compte_dest_input);
     }
 
-    // add montant input
-    const montant = document.createElement('input');
-    montant.type = 'number';
-    montant.name = 'montant';
-    montant.placeholder = 'Montant';
-    montant.required = true;
-    form.appendChild(montant);
+
+    if (action === "pin") {
+        const pin = document.createElement('input');
+        pin.type = 'password';
+        pin.name = 'pin';
+        pin.placeholder = 'Nouveau code PIN';
+        pin.required = true;
+        form.appendChild(pin);
+    }else {
+        const montant = document.createElement('input');
+        montant.type = 'number';
+        montant.name = 'montant';
+        montant.placeholder = 'Montant';
+        montant.required = true;
+        form.appendChild(montant);
+    }
 
 
     // add submit button
@@ -133,8 +144,11 @@ const submitForm = (e, action_name, destinataire) => {
             clearPopUp();
             if (action_name === "transféré"){
                 showSuccessMessage(`Le montant de ${data.get('montant')}€ a été ${action_name} au compte ${destinataire.nom} avec succès`);
-            }else
+            } else if (action_name === "modifié") {
+                showSuccessMessage(`Le code PIN a été ${action_name} avec succès`);
+            } else {
                 showSuccessMessage(`Le montant de ${data.get('montant')}€ a été ${action_name} avec succès`);
+            }
         } else {
             showErrorMessage('Une erreur est survenue');
             console.error('Error:', response.status);

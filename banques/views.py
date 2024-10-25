@@ -177,3 +177,17 @@ def virement(request, compte_source):
         "montant": montant
     }, safe=False)
 
+@login_required
+def modify_pin(request, compte_id):
+    compte = CompteEnBanque.objects.get(pk=compte_id)
+
+    pin = request.POST.get('pin')
+
+    compte.pin = pin
+
+    compte.save()
+
+    return JsonResponse(data={
+        "compte": compte.compte_id,
+        "pin": pin
+    }, safe=False)
