@@ -26,7 +26,7 @@
         <button onclick="deployPopUpForm('depot', {{ compte.compte_id }})">Dépot</button>
         <button onclick="deployPopUpForm('retrait', {{ compte.compte_id }})">Retrait</button>
         <button onclick="fetchComptes({{ compte.compte_id }})">Transfert</button>
-        <button>Virement</button>
+        <button onclick="deployPopUpForm('virement', {{ compte.compte_id }})">Virement</button>
     </div>
 
     <div id="overlay"></div>

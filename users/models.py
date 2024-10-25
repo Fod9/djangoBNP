@@ -4,6 +4,8 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.utils import timezone
 
+from banques.models import Virement
+
 
 class Utilisateur(AbstractUser):
     utilisateur_id = models.AutoField(primary_key=True)
@@ -45,8 +47,5 @@ class Utilisateur(AbstractUser):
         compte_source.effectuer_transfert(compte_cible, montant)
 
     def effectuer_virement(self, compte_source, compte_cible, montant: float):
-        if compte_source.solde >= montant:
-            compte_source.retirer_argent(montant)
-            compte_cible.deposer_argent(montant)
-        else:
-            raise ValueError("Solde insuffisant pour le virement")
+
+        compte_source.effectuer_virement(compte_cible, montant)

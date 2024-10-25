@@ -61,12 +61,38 @@ class CompteEnBanque(models.Model):
     def effectuer_transfert(self, compte_cible, montant: float):
         montant = float(montant)
         if montant <= self.solde:
-            self.retirer_argent(montant)
-            compte_cible.deposer_argent(montant)
+            self.solde -= montant
+            compte_cible.solde += montant
             transaction = Virement.objects.create(compte_source=self, compte_cible=compte_cible, montant=montant, type=Transaction.Types.VIREMENT)
             transaction.save()
+            self.save()
+            compte_cible.save()
         else:
             raise ValueError("Solde insuffisant pour le transfert")
+
+    def effectuer_virement(self, compte_cible, montant: float):
+        montant = float(montant)
+
+        if montant <= self.solde:
+
+            if self == compte_cible:
+                raise ValueError("Impossible de faire un virement sur le même compte")
+
+            self.solde -= montant
+            compte_cible.solde += montant
+
+            transaction = Virement.objects.create(
+                compte_source=self,
+                compte_cible=compte_cible,
+                montant=montant,
+                type=Transaction.Types.VIREMENT
+            )
+            transaction.save()
+            self.save()
+            compte_cible.save()
+
+        else:
+            raise ValueError("Solde insuffisant pour le virement")
 
 
 class TransactionManager(Manager):

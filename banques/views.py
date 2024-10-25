@@ -58,7 +58,8 @@ def recuperer_comptes(request):
     return JsonResponse(data=comptes, safe=False)
 
 
-def creer_compte()
+def creer_compte(request):
+    pass
 
 @login_required
 def accueil_banque(request, banque_id):
@@ -66,6 +67,8 @@ def accueil_banque(request, banque_id):
     banque = Banque.objects.get(pk=banque_id)
 
     user = request.user
+
+    user = Utilisateur.objects.get(pk=user.utilisateur_id)
 
     comptes_dans_la_banque = banque.comptes_bancaires.all()
 
@@ -152,15 +155,20 @@ def retrait(request, compte_id):
     }, safe=False)
 
 @login_required
-def virement(request, compte_source, compte_dest):
+def virement(request, compte_source):
     user = Utilisateur.objects.get(pk=request.user.utilisateur_id)
 
     compte_source = CompteEnBanque.objects.get(pk=compte_source)
-    compte_dest = CompteEnBanque.objects.get(pk=compte_dest)
+
+    compte_dest_rib = request.POST.get('rib_dest')
+
+    compte_dest = CompteEnBanque.objects.filter(rib=compte_dest_rib).first()
+
+    print(compte_dest)
 
     montant = request.POST.get('montant')
 
-    user.transferer_argent(compte_source, compte_dest, montant)
+    user.effectuer_virement(compte_source, compte_dest, montant)
 
 
     return JsonResponse(data={

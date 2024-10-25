@@ -61,6 +61,8 @@ function deployPopUpForm(action, compte, compte_dest = null) {
     }else if (action === "transfert"){
         action_name = "transféré"
         destinataire = compte_dest
+    }else if(action === "virement"){
+        action_name = "virement"
     }
 
 
@@ -77,6 +79,16 @@ function deployPopUpForm(action, compte, compte_dest = null) {
         compte_dest_input.type = 'hidden';
         compte_dest_input.name = 'compte_dest';
         compte_dest_input.value = compte_dest.id;
+        form.appendChild(compte_dest_input);
+    }
+
+    if (action === "virement"){
+        // add compte_dest input
+        const compte_dest_input = document.createElement('input');
+        compte_dest_input.type = 'text';
+        compte_dest_input.name = 'rib_dest';
+        compte_dest_input.placeholder = 'RIB du destinataire';
+        compte_dest_input.required = true;
         form.appendChild(compte_dest_input);
     }
 
