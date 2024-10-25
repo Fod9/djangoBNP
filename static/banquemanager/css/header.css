@@ -1,0 +1,31 @@
+header h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2em;
+    font-weight: 450;
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+header .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    line-height: 1.5em;
+}
+
+header .links a {
+    margin-left: 20px;
+}

@@ -1,11 +1,17 @@
 {% extends 'layout/layout.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'banquemanager/css/banques/home.css' %}">
+{% endblock %}
+
 
 {% block content %}
     <h1>Vous êtes dans la banque : {{ banque_nom }}</h1>
 
-    <h2>Vos comptes </h2>
 
-    <div>
+    <div id="vos_comptes_block">
+        <h2>Vos comptes </h2>
         <ul>
             {% for compte in comptes %}
                 <li>
