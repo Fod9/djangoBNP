@@ -56,7 +56,9 @@ def creer_compte(request):
 
 @login_required
 def accueil_banque(request):
-    user = request.user
+    user = Utilisateur.objects.get(pk=request.user.utilisateur_id)
+
+    print(user)
 
     comptes_dans_la_banque = CompteEnBanque.objects.filter(utilisateur=user)
 

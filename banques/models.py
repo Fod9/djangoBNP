@@ -8,7 +8,7 @@ class CompteEnBanque(models.Model):
     compte_id = models.AutoField(primary_key=True)
     nom = models.CharField(max_length=255)
     solde = models.FloatField(default=0.0)
-    taux_interet = models.FloatField(default=0.01)
+    taux_interet = models.FloatField(default=10)
     pin = models.PositiveIntegerField(default=0)
     date_creation = models.DateTimeField(auto_now_add=True)
     utilisateur = models.ForeignKey('users.Utilisateur', related_name='comptes', on_delete=models.CASCADE, null=True)

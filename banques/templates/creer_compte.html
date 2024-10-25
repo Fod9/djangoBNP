@@ -1,7 +1,12 @@
 {% extends 'layout/layout.html' %}
+{%  load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'banquemanager/css/banques/creer_compte.css' %}">
+{% endblock %}
 
 {% block content %}
-    <form action="{% url 'banques:creer_compte' %}" method="post">
+    <form action="{% url 'banques:creer_compte' %}" method="post" id="creer_compte">
         {% csrf_token %}
         <label for="nom">Nom compte
             <input type="text" name="nom" id="nom" required>
@@ -9,9 +14,9 @@
         <label for="taux_interet">
             Taux d'intérêt
             <select name="taux_interet" id="taux_interet">
-                <option value="0.05">5%</option>
-                <option value="0.1" selected>10%</option>
-                <option value="0.2">20%</option>
+                <option value="5">5%</option>
+                <option value="10" selected>10%</option>
+                <option value="20">20%</option>
             </select>
         </label>
 

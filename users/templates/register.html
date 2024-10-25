@@ -1,7 +1,12 @@
 {% extends 'layout/layout.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'banquemanager/css/users/register.css' %}">
+{% endblock %}
 
 {% block content %}
-    <form method="post">
+    <form method="post" id="creer_compte">
 
         <h2>Inscription</h2>
         {% if error_message %}

@@ -1,0 +1,32 @@
+#creer_compte {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+    flex-direction: column;
+    width: 80%;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#creer_compte input {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-weight: 450;
+}
+
+#creer_compte input[type="submit"] {
+    background: #333;
+    color: #f8f9fa;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    #creer_compte {
+        width: 30%;
+    }
+}
