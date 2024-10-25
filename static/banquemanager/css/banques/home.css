@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2em;
+    font-weight: 450;
+    color: #333;
+}
+
+#vos_comptes_block h2 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+    font-weight: 450;
+    color: #333;
+}
+
+#vos_comptes_block ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+#vos_comptes_block ul li {
+    transition: background-color 0.3s;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 450;
+}
+
+#vos_comptes_block ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+#vos_comptes_block ul li:hover {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+#vos_comptes_block ul li:hover a {
+    color: #f8f9fa;
+}
+
