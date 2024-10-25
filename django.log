@@ -359,3 +359,126 @@ Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:44:4
 test
 Comptes mis à jour avec leurs taux d'interet
 Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:44:41 CEST)" executed successfully
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:25:55.991066+02:00 (in 20.000000 seconds)
+C:\Users\Utilisateur\PycharmProjects\djangoBNP\banquemanager\wsgi.py changed, reloading.
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:26:13.485430+02:00 (in 20.000000 seconds)
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:26:13 CEST)" (scheduled at 2024-10-25 15:26:13.485430+02:00)
+test
+Next wakeup is due at 2024-10-25 15:26:33.485430+02:00 (in 19.986857 seconds)
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:26:33 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:26:53.485430+02:00 (in 19.986265 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:26:53 CEST)" (scheduled at 2024-10-25 15:26:33.485430+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:26:53 CEST)" executed successfully
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:27:37.133789+02:00 (in 19.997437 seconds)
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:27:57 CEST)" (scheduled at 2024-10-25 15:27:37.133789+02:00)
+Next wakeup is due at 2024-10-25 15:27:57.133789+02:00 (in 19.981000 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:27:57 CEST)" executed successfully
+C:\Users\Utilisateur\PycharmProjects\djangoBNP\banquemanager\wsgi.py changed, reloading.
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:28:05.906282+02:00 (in 19.999000 seconds)
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:28:25 CEST)" (scheduled at 2024-10-25 15:28:05.906282+02:00)
+Next wakeup is due at 2024-10-25 15:28:25.906282+02:00 (in 19.981736 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:28:25 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:28:45.906282+02:00 (in 19.984663 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:28:45 CEST)" (scheduled at 2024-10-25 15:28:25.906282+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:28:45 CEST)" executed successfully
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:29:16.912239+02:00 (in 19.998897 seconds)
+"GET / HTTP/1.1" 302 0
+"GET /banque/ HTTP/1.1" 200 1338
+"GET /static/banquemanager/css/normalize.css HTTP/1.1" 304 0
+"GET /static/banquemanager/js/GetCookies.js HTTP/1.1" 304 0
+"GET /static/banquemanager/css/header.css HTTP/1.1" 304 0
+"GET /static/banquemanager/css/layout.css HTTP/1.1" 304 0
+"GET /static/banquemanager/css/styles.css HTTP/1.1" 304 0
+"GET /static/banquemanager/css/banques/home.css HTTP/1.1" 304 0
+"GET /banque/comptes/15 HTTP/1.1" 302 0
+"GET /banque/enter_pin/15?next=%2Fbanque%2Fcomptes%2F15 HTTP/1.1" 200 1481
+"GET /static/banquemanager/css/banques/enter_pin.css HTTP/1.1" 304 0
+"POST /banque/comptes/15 HTTP/1.1" 200 2550
+"GET /static/banquemanager/css/banques/compte.css HTTP/1.1" 304 0
+"GET /static/banquemanager/js/banques/comptes.js HTTP/1.1" 304 0
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:29:36 CEST)" (scheduled at 2024-10-25 15:29:16.912239+02:00)
+Next wakeup is due at 2024-10-25 15:29:36.912239+02:00 (in 19.984237 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:29:36 CEST)" executed successfully
+"POST /banque/comptes/15 HTTP/1.1" 200 2560
+"GET /static/banquemanager/css/layout.css HTTP/1.1" 200 219
+"GET /static/banquemanager/js/banques/comptes.js HTTP/1.1" 200 6641
+"GET /static/banquemanager/css/header.css HTTP/1.1" 200 547
+"GET /static/banquemanager/css/normalize.css HTTP/1.1" 200 6485
+"GET /static/banquemanager/css/styles.css HTTP/1.1" 200 230
+"GET /static/banquemanager/css/banques/compte.css HTTP/1.1" 200 4273
+"GET /static/banquemanager/js/GetCookies.js HTTP/1.1" 200 506
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2671
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:29:56.912239+02:00 (in 19.990616 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:29:56 CEST)" (scheduled at 2024-10-25 15:29:36.912239+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:29:56 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:30:16.912239+02:00 (in 19.989121 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:30:16 CEST)" (scheduled at 2024-10-25 15:29:56.912239+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:30:16 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:30:36.912239+02:00 (in 19.991643 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:30:36 CEST)" (scheduled at 2024-10-25 15:30:16.912239+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:30:36 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 15:30:56.912239+02:00 (in 19.993512 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:30:56 CEST)" (scheduled at 2024-10-25 15:30:36.912239+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 15:30:56 CEST)" executed successfully
