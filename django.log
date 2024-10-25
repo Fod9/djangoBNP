@@ -1,0 +1,361 @@
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Watching for file changes with StatReloader
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:30:00.349663+02:00 (in 9.996732 seconds)
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:33:35.675256+02:00 (in 9.996947 seconds)
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:33:45 CEST)" (scheduled at 2024-10-25 14:33:35.675256+02:00)
+Next wakeup is due at 2024-10-25 14:33:45.675256+02:00 (in 9.982816 seconds)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:33:45 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:33:55.675256+02:00 (in 9.981276 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:33:55 CEST)" (scheduled at 2024-10-25 14:33:45.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:33:55 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:34:05.675256+02:00 (in 9.981359 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:05 CEST)" (scheduled at 2024-10-25 14:33:55.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:05 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:34:15.675256+02:00 (in 9.984806 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:15 CEST)" (scheduled at 2024-10-25 14:34:05.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:15 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:34:25.675256+02:00 (in 9.991486 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:25 CEST)" (scheduled at 2024-10-25 14:34:15.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:25 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:34:35.675256+02:00 (in 9.985566 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:35 CEST)" (scheduled at 2024-10-25 14:34:25.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:35 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:34:45.675256+02:00 (in 9.988623 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:45 CEST)" (scheduled at 2024-10-25 14:34:35.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:45 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:34:55.675256+02:00 (in 9.992338 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:55 CEST)" (scheduled at 2024-10-25 14:34:45.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:34:55 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:35:05.675256+02:00 (in 9.982630 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:05 CEST)" (scheduled at 2024-10-25 14:34:55.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:05 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:35:15.675256+02:00 (in 9.983442 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:15 CEST)" (scheduled at 2024-10-25 14:35:05.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:15 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:35:25.675256+02:00 (in 9.984261 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:25 CEST)" (scheduled at 2024-10-25 14:35:15.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:25 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:35:35.675256+02:00 (in 9.986134 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:35 CEST)" (scheduled at 2024-10-25 14:35:25.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:35 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:35:45.675256+02:00 (in 9.981197 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:45 CEST)" (scheduled at 2024-10-25 14:35:35.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:45 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:35:55.675256+02:00 (in 9.989485 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:55 CEST)" (scheduled at 2024-10-25 14:35:45.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:35:55 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:36:05.675256+02:00 (in 9.987329 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:05 CEST)" (scheduled at 2024-10-25 14:35:55.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:05 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:36:15.675256+02:00 (in 9.991397 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:15 CEST)" (scheduled at 2024-10-25 14:36:05.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:15 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:36:25.675256+02:00 (in 9.988008 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:25 CEST)" (scheduled at 2024-10-25 14:36:15.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:25 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:36:35.675256+02:00 (in 9.980774 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:35 CEST)" (scheduled at 2024-10-25 14:36:25.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:35 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:36:45.675256+02:00 (in 9.994582 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:45 CEST)" (scheduled at 2024-10-25 14:36:35.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:45 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:36:55.675256+02:00 (in 9.988405 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:55 CEST)" (scheduled at 2024-10-25 14:36:45.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:36:55 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:37:05.675256+02:00 (in 9.984768 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:05 CEST)" (scheduled at 2024-10-25 14:36:55.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:05 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:37:15.675256+02:00 (in 9.984247 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:15 CEST)" (scheduled at 2024-10-25 14:37:05.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:15 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:37:25.675256+02:00 (in 9.986843 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:25 CEST)" (scheduled at 2024-10-25 14:37:15.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:25 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:37:35.675256+02:00 (in 9.983556 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:35 CEST)" (scheduled at 2024-10-25 14:37:25.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:35 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:37:45.675256+02:00 (in 9.993018 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:45 CEST)" (scheduled at 2024-10-25 14:37:35.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:45 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:37:55.675256+02:00 (in 9.991130 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:55 CEST)" (scheduled at 2024-10-25 14:37:45.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:37:55 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:38:05.675256+02:00 (in 9.991784 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:05 CEST)" (scheduled at 2024-10-25 14:37:55.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:05 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:38:15.675256+02:00 (in 9.990861 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:15 CEST)" (scheduled at 2024-10-25 14:38:05.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:15 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:38:25.675256+02:00 (in 9.983011 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:25 CEST)" (scheduled at 2024-10-25 14:38:15.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:25 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:38:35.675256+02:00 (in 9.983466 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:35 CEST)" (scheduled at 2024-10-25 14:38:25.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:35 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:38:45.675256+02:00 (in 9.988762 seconds)
+Running job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:45 CEST)" (scheduled at 2024-10-25 14:38:35.675256+02:00)
+test
+Updated solde for account 14.
+Job "my_job (trigger: interval[0:00:10], next run at: 2024-10-25 14:38:45 CEST)" executed successfully
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:39:02.178777+02:00 (in 19.997002 seconds)
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:39:22 CEST)" (scheduled at 2024-10-25 14:39:02.178777+02:00)
+Next wakeup is due at 2024-10-25 14:39:22.178777+02:00 (in 19.992615 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:39:22 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:39:42.178777+02:00 (in 19.982419 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:39:42 CEST)" (scheduled at 2024-10-25 14:39:22.178777+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:39:42 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:40:02.178777+02:00 (in 19.980807 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:40:02 CEST)" (scheduled at 2024-10-25 14:39:42.178777+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:40:02 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:40:22.178777+02:00 (in 19.981797 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:40:22 CEST)" (scheduled at 2024-10-25 14:40:02.178777+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:40:22 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:40:42.178777+02:00 (in 19.986320 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:40:42 CEST)" (scheduled at 2024-10-25 14:40:22.178777+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:40:42 CEST)" executed successfully
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:40:44.490664+02:00 (in 19.997952 seconds)
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:41:04 CEST)" (scheduled at 2024-10-25 14:40:44.490664+02:00)
+Next wakeup is due at 2024-10-25 14:41:04.490664+02:00 (in 19.981989 seconds)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:41:04 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:41:24.490664+02:00 (in 19.983378 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:41:24 CEST)" (scheduled at 2024-10-25 14:41:04.490664+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:41:24 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:41:44.490664+02:00 (in 19.992502 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:41:44 CEST)" (scheduled at 2024-10-25 14:41:24.490664+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:41:44 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:42:04.490664+02:00 (in 19.988115 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:42:04 CEST)" (scheduled at 2024-10-25 14:41:44.490664+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:42:04 CEST)" executed successfully
+Looking up time zone info from registry
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "my_job" to job store "default"
+Scheduler started
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:42:21.502223+02:00 (in 19.998003 seconds)
+Looking for jobs to run
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:42:41 CEST)" (scheduled at 2024-10-25 14:42:21.502223+02:00)
+test
+Next wakeup is due at 2024-10-25 14:42:41.502223+02:00 (in 19.989648 seconds)
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:42:41 CEST)" executed successfully
+"GET / HTTP/1.1" 302 0
+"GET /users/login/?next=/ HTTP/1.1" 200 1574
+"GET /static/banquemanager/css/normalize.css HTTP/1.1" 304 0
+"GET /static/banquemanager/css/styles.css HTTP/1.1" 304 0
+"GET /static/banquemanager/css/layout.css HTTP/1.1" 304 0
+"GET /static/banquemanager/css/header.css HTTP/1.1" 304 0
+"GET /static/banquemanager/css/users/login.css HTTP/1.1" 304 0
+"GET /static/banquemanager/js/GetCookies.js HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2671
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:43:01.502223+02:00 (in 19.979372 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:43:01 CEST)" (scheduled at 2024-10-25 14:42:41.502223+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:43:01 CEST)" executed successfully
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:43:21.502223+02:00 (in 19.982672 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:43:21 CEST)" (scheduled at 2024-10-25 14:43:01.502223+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:43:21 CEST)" executed successfully
+"GET /users/register/ HTTP/1.1" 200 1670
+"GET /static/banquemanager/css/users/register.css HTTP/1.1" 200 686
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:43:41.502223+02:00 (in 19.993447 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:43:41 CEST)" (scheduled at 2024-10-25 14:43:21.502223+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:43:41 CEST)" executed successfully
+"POST /users/register/ HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /banque/ HTTP/1.1" 200 1197
+"GET /static/banquemanager/css/banques/home.css HTTP/1.1" 200 1108
+"GET /banque/comptes/creer HTTP/1.1" 200 1846
+"GET /static/banquemanager/css/banques/creer_compte.css HTTP/1.1" 200 599
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:44:01.502223+02:00 (in 19.993983 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:44:01 CEST)" (scheduled at 2024-10-25 14:43:41.502223+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:44:01 CEST)" executed successfully
+"POST /banque/comptes/creer HTTP/1.1" 302 0
+"GET / HTTP/1.1" 302 0
+"GET /banque/ HTTP/1.1" 200 1338
+"GET /banque/comptes/15 HTTP/1.1" 302 0
+"GET /banque/enter_pin/15?next=%2Fbanque%2Fcomptes%2F15 HTTP/1.1" 200 1481
+"GET /static/banquemanager/css/banques/enter_pin.css HTTP/1.1" 200 956
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:44:21.502223+02:00 (in 19.990443 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:44:21 CEST)" (scheduled at 2024-10-25 14:44:01.502223+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:44:21 CEST)" executed successfully
+"POST /banque/comptes/15 HTTP/1.1" 200 2254
+"GET /static/banquemanager/css/banques/compte.css HTTP/1.1" 200 4273
+"GET /static/banquemanager/js/banques/comptes.js HTTP/1.1" 200 6641
+"POST /banque/depot/15 HTTP/1.1" 200 33
+"POST /banque/comptes/15 HTTP/1.1" 200 2548
+Looking for jobs to run
+Next wakeup is due at 2024-10-25 14:44:41.502223+02:00 (in 19.993947 seconds)
+Running job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:44:41 CEST)" (scheduled at 2024-10-25 14:44:21.502223+02:00)
+test
+Comptes mis à jour avec leurs taux d'interet
+Job "my_job (trigger: interval[0:00:20], next run at: 2024-10-25 14:44:41 CEST)" executed successfully
