@@ -77,6 +77,8 @@ def consulter_compte(request, compte_id):
             "message": "Vous n'êtes pas autorisé à consulter ce compte"
         })
 
+    compte.solde = round(compte.solde, 2)
+
     transactions_sortante = Transaction.objects.filter(compte_source=compte)
     transactions_entrante = Transaction.objects.filter(compte_cible=compte)
 
