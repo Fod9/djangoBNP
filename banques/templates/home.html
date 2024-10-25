@@ -1,0 +1,19 @@
+{% extends 'layout/layout.html' %}
+
+{% block content %}
+
+    <h2>Vos comptes </h2>
+
+    <div>
+        <ul>
+            {% for compte in comptes %}
+                <li>
+                    <a href="/banque/comptes/{{ compte.compte_id }}">{{compte.prenom}}
+                        {{ compte.nom }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <a href="/banque/comptes/creer">Créer un compte</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'layout/layout.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'banquemanager/css/banques/compte.css' %}">
+{% endblock %}
+
+{% block script %}
+    <script src="{% static 'banquemanager/js/banques/comptes.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <h1>Compte : {{ compte.prenom }} {{ compte.nom }}</h1>
+
+    <div id="information_block">
+        <h2>Informations</h2>
+        <ul>
+            <li><span>Nom : </span>{{ compte.nom }}</li>
+            <li><span>RIB : </span>{{ compte.rib }}</li>
+            <li><span>Solde : </span>{{ compte.solde }}</li>
+            <li><span>Taux d'interêt : </span>{{ compte.taux_interet }} %</li>
+        </ul>
+    </div>
+
+    <div class="flex">
+        <button onclick="deployPopUpForm('depot', {{ compte.compte_id }})">Dépot</button>
+        <button onclick="deployPopUpForm('retrait', {{ compte.compte_id }})">Retrait</button>
+        <button onclick="fetchComptes({{ compte.compte_id }})">Transfert</button>
+        <button>Virement</button>
+    </div>
+
+    <div id="overlay"></div>
+    <div id="popup">
+        <button class="close-btn" onclick="clearPopUp()"></button>
+    </div>
+
+    <div id="history_block">
+        <h2>Historique</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Montant</th>
+                <th>Type</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for transaction in transactions %}
+                <tr class="
+                        {% if transaction.type == 'DEPOT' %}vert{% endif %}
+                        {% if transaction.type == 'RETRAIT' %}rouge{% endif %}
+                        {% if transaction.type == 'VIREMENT' %}
+                        {% if transaction.compte_cible == compte %}
+                            vert
+                        {% elif transaction.compte_source == compte %}
+                            rouge
+                        {% endif %}
+                        {% elif transaction.type == 'TRANSACTION' %}
+                            {% if transaction.compte_source == compte %}
+                                rouge
+                            {% else %}
+                                vert
+                            {% endif %}
+                        {% endif %}
+                    ">
+                    <td>{{ transaction.date }}</td>
+                    <td>{{ transaction.montant }}</td>
+                    <td>{{ transaction.type }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

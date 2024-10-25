@@ -1,0 +1,30 @@
+{% extends 'layout/layout.html' %}
+
+{% block content %}
+    <form method="post">
+
+        <h2>Connexion</h2>
+
+        {% if error_message %}
+            <h2>{{ error_message }}</h2>
+        {% endif %}
+        {% csrf_token %}
+        <label>
+            Nom d'utilisateur
+            <input name="username" type="text">
+        </label>
+        <label>
+            Email
+            <input type="email" name="email">
+        </label>
+        <label>
+            Mot de passe
+            <input name="password" type="password">
+        </label>
+        <button type="submit">Se connecter</button>
+
+        <div>
+            Vous n'avez pas de compte ? <a href="{% url 'users:register' %}">Inscrivez-vous</a>
+        </div>
+    </form>
+{% endblock %}

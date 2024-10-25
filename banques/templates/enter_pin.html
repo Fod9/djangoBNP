@@ -1,0 +1,16 @@
+{% extends 'layout/layout.html' %}
+
+{% block content %}
+    <h1>Enter PIN</h1>
+    <form action="{% url 'banques:consulter_compte' compte_id=compte_id %}" method="post">
+        {% csrf_token %}
+        <label for="pin">PIN</label>
+        <input type="password" name="pin" id="pin" required>
+        <input type="hidden" name="next" value="{{ next }}">
+        <input type="submit" value="Submit">
+    </form>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+
+{% endblock %}
