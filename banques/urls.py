@@ -5,7 +5,7 @@ from banques import views
 app_name = 'banques'
 
 urlpatterns = [
-    path('', views.accueil_banque),
+    path('', views.accueil_banque, name='accueil_banque'),
     path('comptes/<int:compte_id>', views.consulter_compte, name='consulter_compte'),
     path('comptes/recuperer_comptes', views.recuperer_comptes),
     path('comptes/creer', views.creer_compte, name='creer_compte'),

@@ -4,5 +4,5 @@ from django.shortcuts import render, redirect
 
 @login_required
 def accueil(request):
-    return redirect('banques:accueil_banque', banque_id=1)
+    return redirect('banques:accueil_banque')
 
